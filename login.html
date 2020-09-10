@@ -19,7 +19,7 @@
             
         </div>
         <div class="login_box">
-            <form class="layui-form" >
+            <form class="layui-form" id="login_form">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username" style="font-size: 26px; color: #ccc;"></i>
                     <input type="text" name="username" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
@@ -32,13 +32,13 @@
                     <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">登录</button>
                 </div>
                 <div class="layui-form-item links">
-                    <a href="javascript:;" id="tologin">前往注册</a>
+                    <a href="javascript:;" id="toreg">前往注册</a>
                 </div>
             </form>
             
         </div>
         <div class="reg_box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id='form_reg'>
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username" style="font-size: 26px; color: #ccc;"></i>
                     <input type="text" name="username" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
@@ -52,10 +52,10 @@
                     <input type="password" name="repassword" required  lay-verify="required|psd|repsd" placeholder="请再次输入密码" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">登录</button>
+                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">注册</button>
                 </div>
                 <div class="layui-form-item links">
-                    <a href="javascript:;" id="toreg">前往登录</a>
+                    <a href="javascript:;" id="tologin">前往登录</a>
                 </div>
             </form>
             
