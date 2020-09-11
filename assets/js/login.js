@@ -20,12 +20,11 @@ $(function () {
                 return '输入密码不一致'
             }
         }
-
     })
     $('#form_reg').on("submit", function (e) {
         e.preventDefault()
         $.ajax({
-            url: "http://ajax.frontend.itheima.net/api/reguser",
+            url: "/api/reguser",
             type: 'post',
             data: {
                 username: $("#form_reg [name=username]").val(),
@@ -43,7 +42,7 @@ $(function () {
     $('#login_form').submit(function(e){
         e.preventDefault()
         $.ajax({
-            url:"http://ajax.frontend.itheima.net/api/login",
+            url:"/api/login",
             type:'post',
             data:$(this).serialize(),
             success:function(res){
@@ -51,10 +50,8 @@ $(function () {
                     return layer.msg(res.message)
                 }
                 layer.msg('登录成功')
-
                 localStorage.setItem('token',res.token)
-                location.href='/index.html'
-                
+                location.href='/index.html' 
             }
         })
     })
