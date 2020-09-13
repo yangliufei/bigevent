@@ -68,6 +68,28 @@
         </div>
       </form>
     </script>
+    <script type="text/html" id="dailog-edit">
+      <form class="layui-form" action="" id="form-edit"lay-filter="edit-form">
+        <input type="hidden" name="Id">
+        <div class="layui-form-item">
+          <label class="layui-form-label">文章名称</label>
+          <div class="layui-input-block">
+            <input type="text" name="name" required  lay-verify="required" placeholder="请输入文章名称" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">文章别名</label>
+          <div class="layui-input-block">
+            <input type="text" name="alias" required  lay-verify="required" placeholder="请输入文章别名" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即修改</button>
+          </div>
+        </div>
+      </form>
+    </script>
 
 
     <!-- 导入 layui 的js -->
